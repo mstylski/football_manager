@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+      .table {
+          display: none;
+      }
+      .spinner {
+          border: 16px solid #f3f3f3;
+          border-radius: 50%;
+          border-top: 16px solid #3498db;
+          width: 120px;
+          height: 120px;
+          -webkit-animation: spin 2s linear infinite; /* Safari */
+          animation: spin 2s linear infinite;
+      }
+
+      /* Safari */
+      @-webkit-keyframes spin {
+          0% { -webkit-transform: rotate(0deg); }
+          100% { -webkit-transform: rotate(360deg); }
+      }
+
+      @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+      }
+  </style>
+  <title>Title</title>
+</head>
+<body>
+
+<table id="results-table" class="table">
+  <thead>
+  <tr>
+    <th scope="col">Date</th>
+    <th scope="col">Team 1</th>
+    <th scope="col">Team 2</th>
+    <th scope="col">Score</th>
+  </tr>
+  </thead>
+  <tbody id="results-table-tbody"></tbody>
+</table>
+<div id="spinner" class="spinner"></div>
+<script src="./bundle.js"></script>
+</body>
+</html>
